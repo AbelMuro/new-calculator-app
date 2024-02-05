@@ -1,0 +1,33 @@
+.screen{
+    height: 128px;
+    padding: 0px 32px;
+    border-radius: 10px;
+    color: #FFE53D;
+    text-align: right;
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.933px;
+    border: none;
+}
+
+.screen:focus{
+    outline: none;
+}
+
+.screen.ThemeOne{
+    background-color: #181F33;
+    color: #FFF;
+}
+
+.screen.ThemeTwo{
+    background-color: #EEE;
+    color: #36362C;
+}
+
+.screen.ThemeThree{
+    background-color: #1E0936;
+    color: #FFE53D;
+}

@@ -1,0 +1,127 @@
+.theme{
+    width: 139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.theme_title{
+    margin: 0px 0px 7px 0px;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.theme_title.ThemeOne{
+    color: #FFF;
+}
+
+.theme_title.ThemeTwo{
+    color: #36362C;
+}
+
+.theme_title.ThemeThree{
+    color:#FFE53D;
+}
+
+
+.theme_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 5px;
+}
+
+.theme_numbers{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.theme_numbers.ThemeOne > li{
+    color: #FFF;
+}
+
+.theme_numbers.ThemeTwo > li{
+    color: #36362C;
+}
+
+.theme_numbers.ThemeThree > li{
+    color: #FFE53D;
+}
+
+.theme_switch{
+    width: 71.932px;
+    height: 26px;
+    border-radius: 13px;
+    border: 5px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.theme_switch.ThemeOne{
+    background-color: #242D44;
+}
+
+.theme_switch.ThemeTwo{
+    background-color: #D2CDCD;
+}
+
+.theme_switch.ThemeThree{
+    background-color: #1E0936;
+}
+
+.switch_handle{
+    width: 16.21px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.switch_handle.ThemeOne{
+    background-color: #D03F2F;
+}
+
+.switch_handle.ThemeOne:hover{
+    background-color: #F96B5B;
+}
+
+.switch_handle.ThemeTwo{
+    background-color: #C85402;
+}
+
+.switch_handle.ThemeTwo:hover{
+    background-color: #FF8A38;
+}
+
+.switch_handle.ThemeThree{
+    background-color: #00DED0;
+}
+
+.switch_handle.ThemeThree:hover{
+    background-color: #93FFF8;
+}
+
+@media(max-width: 700px){
+    .theme_title{
+        margin-bottom: 5px;
+    }
+}

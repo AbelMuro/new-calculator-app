@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 32px;
+}
+
+.header_logo{
+    font-family: var(--font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.533px;
+}
+
+.header_logo.ThemeOne{
+    color: #FFF;
+}
+
+.header_logo.ThemeTwo{
+    color: #36362C;
+}
+
+.header_logo.ThemeThree{
+    color: #FFE53D;
+}

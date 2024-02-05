@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        [
+          "babel-plugin-root-import",                            
+          {
+            "paths": [
+              {
+                "rootPathSuffix": "./src",             
+                "rootPathPrefix": "~/"                    
+              },
+              {
+                "rootPathSuffix" : "./src/Store/Slices",
+                "rootPathPrefix" : "Actions" 
+              }
+            ]
+          }
+        ]
+      ]
+}
