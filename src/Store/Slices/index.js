@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import themeReducer, {UPDATE_THEME} from './Theme';
-import calculateReducer, {UPDATE_OPERATOR, UPDATE_OPERAND_ONE, UPDATE_OPERAND_TWO} from './Calculate';
+import calculateReducer, {ADD_DIGIT, ADD_OPERATOR, DELETE, RESET_EXPRESSION} from './Expression';
 
 const rootReducer = combineReducers({
     theme : themeReducer,
-    calculate: calculateReducer,
+    expression: calculateReducer,
 })
 
 
-export {UPDATE_THEME, UPDATE_OPERATOR, UPDATE_OPERAND_ONE, UPDATE_OPERAND_TWO};                          //action creators
+export {UPDATE_THEME, ADD_DIGIT, ADD_OPERATOR, DELETE, RESET_EXPRESSION};                          //action creators
 export default rootReducer;                     //root reducer

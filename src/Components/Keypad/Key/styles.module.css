@@ -1,0 +1,54 @@
+.key{
+    width: 101px;
+    height: 64px;
+    padding: 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.533px;
+}
+
+.key.ThemeOne{
+    background-color: #EAE3DC;    
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+    color: #434A59;    
+}
+
+.key.ThemeOne:hover{
+    background-color: white;
+}
+
+.key.ThemeTwo{
+    background-color: #E5E4E1;
+    box-shadow: 0px -4px 0px 0px #A79E91 inset;
+    color: #36362C;
+}
+
+.key.ThemeTwo:hover{
+    background-color: #FFFFFF;
+}
+
+.key.ThemeThree{
+    background-color: #331C4D;
+    box-shadow: 0px -4px 0px 0px #881C9E inset;
+    color: #FFE53D;
+}
+
+.key.ThemeThree:hover{
+    background-color: #6C34AC;
+}
+
+@media(max-width: 600px){
+    .key{
+        width: 60px;
+        height: 64px;
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+}

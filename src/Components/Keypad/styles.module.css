@@ -1,0 +1,75 @@
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-content: start;
+    gap: 24px;
+    padding: 24px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+.keypad.ThemeOne{
+    background-color: #242D44; 
+}
+
+.keypad.ThemeTwo{
+    background-color: #D2CDCD;
+}
+
+.keypad.ThemeThree{
+    background-color: #1E0936;
+}
+
+.submit{
+    width: 227px;
+    height: 64px;
+    cursor: pointer;
+    grid-column: 3/5;
+    grid-row: 5/6;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.467px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.submit.ThemeOne{
+    background-color: #D03F2F;
+    box-shadow: 0px -4px 0px 0px #93261A inset;  
+}
+
+.submit.ThemeOne:hover{
+    background-color: #F96B5B;
+}
+
+.submit.ThemeTwo{
+    background-color: #C85402;
+    box-shadow: 0px -4px 0px 0px #873901 inset;  
+}
+
+.submit.ThemeTwo:hover{
+    background-color: #FF8438;
+}
+
+.submit.ThemeThree{
+    background-color: #00DED0;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;  
+}
+
+.submit.ThemeThree:hover{
+    background-color: #93FFF8;
+}
+
+@media(max-width: 600px){
+    .keypad{
+        height: 420px;
+        gap: 13px;
+    }
+}

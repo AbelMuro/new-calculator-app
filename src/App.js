@@ -2,7 +2,8 @@ import React from 'react';
 import Store from './Store';
 import { Provider } from 'react-redux';
 import Header from './Components/Header';
-import ScreenResult from './Components/ScreenResult';
+import Screen from './Components/Screen';
+import Keypad from './Components/Keypad';
 import './styles.css';
 
 function App(){
@@ -10,7 +11,8 @@ function App(){
         <Provider store={Store}>
             <main className='container'>
                 <Header/>
-                <ScreenResult/>
+                <Screen/>
+                <Keypad/>
             </main>
         </Provider>
 

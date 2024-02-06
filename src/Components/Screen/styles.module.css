@@ -11,6 +11,7 @@
     line-height: normal;
     letter-spacing: -0.933px;
     border: none;
+    margin-bottom: 24px;
 }
 
 .screen:focus{
@@ -30,4 +31,12 @@
 .screen.ThemeThree{
     background-color: #1E0936;
     color: #FFE53D;
+}
+
+@media(max-width: 600px){
+    .screen{
+        height: 88px;
+        font-size: 2.5rem;
+        letter-spacing: -0.667px;
+    }
 }
