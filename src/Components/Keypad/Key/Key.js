@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import {useSelector, useDispatch} from 'react-redux';
-import { ADD_DIGIT, ADD_OPERATOR } from 'Actions';
+import { ADD_DIGIT, ADD_OPERATOR, ADD_DECIMAL_POINT } from 'Actions';
  
 function Key({value}) {
     const dispatch = useDispatch();
@@ -10,6 +10,8 @@ function Key({value}) {
     const handleKey = () => {
         if(typeof(value) === 'number')
             dispatch(ADD_DIGIT(value));
+        else if(value === '.')
+            dispatch(ADD_DECIMAL_POINT())
         else
             dispatch(ADD_OPERATOR(value));
     }

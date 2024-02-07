@@ -1,14 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Digit from './Key';
 import Operator from './Key';
 import Delete from './Delete';
 import Reset from './Reset';
 import styles from './styles.module.css';
 import {useSelector, useDispatch} from 'react-redux';
+import { EVALUATE_EXPRESSION } from 'Actions';
 
 function Keypad() {
     const dispatch = useDispatch();
     const {theme} = useSelector(state => state.theme);
+
+
+    const handleCalculate = () => {
+        dispatch(EVALUATE_EXPRESSION());
+    }
 
     const setTheme = (initialStyles) => {
         if(theme === 1)
@@ -38,7 +44,9 @@ function Keypad() {
             <Operator value={'/'} />
             <Operator value={'x'} />
             <Reset/>
-            <input type='submit' value='=' className={styles.submit}/>
+            <button type='button' className={setTheme(styles.submit)} onClick={handleCalculate}>
+                =    
+            </button>
         </section>
     )
 }

@@ -43,6 +43,7 @@
 .submit.ThemeOne{
     background-color: #D03F2F;
     box-shadow: 0px -4px 0px 0px #93261A inset;  
+    color: white;
 }
 
 .submit.ThemeOne:hover{
@@ -52,6 +53,7 @@
 .submit.ThemeTwo{
     background-color: #C85402;
     box-shadow: 0px -4px 0px 0px #873901 inset;  
+    color: white;
 }
 
 .submit.ThemeTwo:hover{
@@ -61,6 +63,7 @@
 .submit.ThemeThree{
     background-color: #00DED0;
     box-shadow: 0px -4px 0px 0px #6CF9F1 inset;  
+    color: #1A2327;
 }
 
 .submit.ThemeThree:hover{
@@ -71,5 +74,11 @@
     .keypad{
         height: 420px;
         gap: 13px;
+    }
+
+    .submit{
+        width: 133px;
+        height: 64px;
+        border-radius: 5px;
     }
 }

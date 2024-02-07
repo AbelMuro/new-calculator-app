@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './styles.module.css';
 import {useSelector, useDispatch} from 'react-redux';
-import {DELETE} from 'Actions';
+import {DELETE_CHARACTER} from 'Actions';
 
 function Delete() {
     const dispatch = useDispatch();
     const {theme} = useSelector(state => state.theme)
 
     const handleDelete = () => {
-        dispatch(DELETE());
+        dispatch(DELETE_CHARACTER());
     }
 
 
