@@ -15,6 +15,7 @@
     grid-row: 5/6;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .reset.ThemeOne{
