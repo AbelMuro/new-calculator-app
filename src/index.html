@@ -7,11 +7,24 @@
     <meta name="keywords" content="calculator, app, math, numbers, operators"/>                                            
     <meta name='description' content='Online calculator that processes basic math that includes addition, multiplication, subtraction and division'/> 
     <meta name="theme-color" content="#FFFFFF"/>                            
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">                    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <link rel="manifest" href="/pwa/manifest.json"/>                      
     <title>Calculator</title>
 </head>
 <body>
     <noscript> Please enable javascript to use this app</noscript>
     <div id="root"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register(`/pwa/ServiceWorkers.js`).then((registration) => {
+                        console.log('Worker registration is successful', registration.scope);
+                    }, (err) => {
+                        console.log('Worker registration has failed', err);
+                    })
+                });
+        } else 
+                console.log('Service Worker is not supported by your browser.');
+    </script>
 </body>
 </html>
