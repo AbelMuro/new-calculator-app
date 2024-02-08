@@ -18,9 +18,9 @@ function Header() {
 
     return(
         <header className={styles.header}>
-            <strong className={setTheme(styles.header_logo)}>
+            <h1 className={setTheme(styles.header_logo)}>
                 calc
-            </strong>
+            </h1>
             <ThemeSwitch theme={theme}/>
         </header>
     )

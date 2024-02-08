@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import styles from './styles.module.css';
 import {useSelector, useDispatch} from 'react-redux';
+import { RESET_EXPRESSION } from 'Actions';
 
 function Screen() {
     const dispatch = useDispatch();
@@ -39,6 +40,14 @@ function Screen() {
         let width = inputRef.current.scrollWidth;
         inputRef.current.scrollLeft = width;
     }, [expression])
+
+    useEffect(() => {
+        if(expression === 'Infinity'){
+            dispatch(RESET_EXPRESSION());
+            alert('Cannot divide by zero')
+        }
+            
+    },[expression])
 
     return(
             <input 

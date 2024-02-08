@@ -28,6 +28,10 @@ const expressionSlice = createSlice({
         ADD_DECIMAL_POINT(state) {
             let exp = state.expression.split('');
 
+            if(!exp.length || exp[exp.length - 1].match(/[[+\-x\/]/g)){
+                state.expression += '0.'
+                return
+            }
             if(!exp[exp.length - 1].match(/\d/)) return;
 
             for(let i = exp.length - 1; i >= 0; i--){
