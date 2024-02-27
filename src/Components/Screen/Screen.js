@@ -42,7 +42,7 @@ function Screen() {
     }, [expression])
 
     useEffect(() => {
-        if(expression === 'Infinity'){
+        if(expression === 'Infinity' || expression === '-Infinity'){
             dispatch(RESET_EXPRESSION());
             alert('Cannot divide by zero')
         }
